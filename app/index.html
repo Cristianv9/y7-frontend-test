@@ -11,7 +11,7 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.scss">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -19,28 +19,76 @@
     <!-- endbuild -->
 </head>
 <body>
-
-    <div class="readme">
-        <div class="content">
-            <p>This project includes:</p>
-            <ul>
-                <li>jQuery</li>
-                <li>Modernizr</li>
-                <li>
-                    <a href="http://bourbon.io/" target="_blank">Bourbon</a>
-                </li>
-                <li>
-                    <a href="http://foundation.zurb.com/sites/docs/" target="_blank">Foundation 6</a>
-                </li>
-                <li>
-                    <a href="http://foundation.zurb.com/sites/docs/motion-ui.html" target="_blank">Motion UI</a>
-                </li>
-                <li>
-                    <a href="https://design.google.com/icons/" target="_blank">Google Material Icons</a>
-                </li>
+<!--Nav Bar-->
+    <div class="top-bar">
+        <div class="top-bar-title">
+            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                <button class="menu-icon dark" type="button" data-toggle></button>
+            </span>
+            <img src="images/logo.png">
+        </div>
+        <div id="responsive-menu">
+            <div class="top-bar-left">
+                <ul class="top-bar-left">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+        </div>
+        <div class="top-bar-right txt-left">
+            <ul class="menu">
+                <li><a href="#">Log in <i class="material-icons">account_circle</i></a></li>    
             </ul>
         </div>
     </div>
+
+<!--Banner Starts Here-->
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+            <button class="orit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+             <li class="is-active orbit-slide">
+               <img class="orbit-image" src="images/banner.png" alt="Space">
+             </li>
+              <li class="orbit-slide">
+                 <img class="orbit-image" src="images/banner.png" alt="Space">
+             </li>
+        </ul>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">Slide</span class="show-for-sr">Active Slide<span></span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+         </nav>
+        
+<!--Banner Paragraph Section-->
+        <div class="hero panel">
+            <h1>Lorem Ipsum</h1>
+            <p class="half-width show-for-large-up hide-for-small-only hide-for-medium-only">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet aliquam ex, sed dapibus turpis. Etiam eu eros vehicula, finibus lectus in, porttitor dolor. 
+            </p>
+            <a class="button-warning" href="">Lets Begin</a>
+        </div>
+    </div>
+
+<!--body section starts here-->
+    <div class="clear"></div>
+
+    <div class="row display">
+        <div class="small-12 medium-12 large-6 columns">
+           <p>
+              Cras faucibus iaculis nulla at rhoncus. Vivamus maximus fringilla nisi, et commodo dui gravida non. Suspendisse pellentesque scelerisque sapien, sed ultricies nisl bibendum eu. Nunc quis turpis sapien. Suspendisse pellentesque gravida tellus sit amet feugiat. Maecenas finibus ac neque in aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer hendrerit risus at tristique porttitor. Praesent pretium sem nec lectus scelerisque, convallis venenatis justo facilisis. Duis ornare at nisi non facilisis. Sed quis porta tellus, et iaculis ante. Phasellus in facilisis justo. 
+           </p> 
+           <p>
+             Mauris maximus, erat sit amet venenatis suscipit, sapien purus tincidunt lectus, ut cursus felis nisi non tortor. Ut vehicula ultricies tellus. Nam aliquam sed lectus eu pulvinar. Pellentesque malesuada gravida elit, vel cursus libero lacinia sit amet. Ut placerat, orci id ullamcorper hendrerit, nulla massa ultricies est, eu luctus urna eros euismod ligula. Nulla porta interdum lobortis. Aliquam tincidunt feugiat elit nec malesuada. Praesent ultricies mi quis nunc suscipit tristique. Cras lobortis nunc sit amet nisi imperdiet efficitur.   
+           </p>
+        </div>
+    </div>
+
+<!--Body cotent ends here, footer begins-->
+
+<footer>
+    Copyrights @  Yellow7
+</footer>
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
